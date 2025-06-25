@@ -31,10 +31,18 @@ public class UserService {
 		return userDAO.verifyOTP(userId, otp);
 	}
 	
+	public String getEmailByUserIdOrUsername(String userId) {
+		return userDAO.getEmailByUserIdOrUsername(userId);
+	}
+	
 	public void sendEmail(String to, String otp) {
 		String from = "netproductionsinc888@gmail.com";
 		String subject = "QuizPro OTP Code";
 		String body = "Your QuizPro OTP Code is "+otp+" Thank You";
 		mailService.sendMail(from, to, subject, body);
+	}
+	
+	public boolean updatePassword(String userIdOrUsername, String newPassword) {
+	    return userDAO.updatePassword(userIdOrUsername, newPassword);
 	}
 }
