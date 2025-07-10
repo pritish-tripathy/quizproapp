@@ -13,6 +13,10 @@
 		<h1 style="text-align: center; color: white; margin: 0; padding: 10px 0;">QuizPro<sup>TM</sup> Application</h1>
 	</div>
 	<h2 style="text-align: center;">Welcome to the Home Page!</h2>
+	<div style="text-align: center; margin-top: 30px;">
+        <a href="addQuestionForm" class="btn btn-success btn-lg">Add Quiz</a>
+        <a href="showQuestions" class="btn btn-primary btn-lg">Show Questions</a>
+    </div>
 </body>
 </html>
 
