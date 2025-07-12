@@ -1,21 +1,22 @@
-# MAJOR CHANGES WILL UPDATE UPLOAD SRC
-
 - ### Creating the SQL Database
 ```CREATE DATABASE quizprodb;```
 
-- ### Create the SQL Table
-```
-CREATE TABLE myusers (
-	userId VARCHAR(50),
-	username VARCHAR(50),
-	email VARCHAR(50),
-	password VARCHAR(50),
-	otp VARCHAR(10), 
-	city VARCHAR(20)
-);
-```
-
 - ### Inserting a Record
 ```
-INSERT INTO myusers (user_id, username, email, password, city) VALUES ('101', 'pritish-tripathy', 'myexample@mailinator.com', 'Ppt@123', 'bengaluru');
+INSERT INTO myusers (user_id, city, email, password, role, username) VALUES (101, 'blr', 'myexample@mailinator.com', 'hello', 'teacher', 'Pritish Tripathy');
+```
+
+- ### Inserting A Course
+```dtd
+INSERT INTO mycourses (course_name) VALUES ('Core Java');
+```
+
+- ### Inserting the Topics
+```dtd
+INSERT INTO mycourse_topics (course_id, topic_name) VALUES 
+(1, 'Datatypes'),
+(1, 'Arrays'),
+(1, 'Object Oriented Programming'),
+(1, 'Multithreading'),
+(1, 'Collections');
 ```

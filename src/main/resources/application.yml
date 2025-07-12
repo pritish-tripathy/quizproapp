@@ -1,0 +1,44 @@
+server:
+  port: 8876
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        web.servlet.view: TRACE
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: netproductionsinc888@gmail.com
+    password: cnie pitt apuk xemp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+          starttls:
+            enable: true
+
+  datasource:
+    url: jdbc:mysql://localhost:8099/quizprodb?useSSL=false
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+  mvc:
+    view:
+      prefix: /WEB-INF/myjsps/
+      suffix: .jsp
